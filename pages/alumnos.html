@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/style-alumnos.css">
+</head>
+<body>
+    <button><a href="../index.html">Regresar a inicio</a></button>
+    <div class="contact_form">
+        <div class="formulario">
+            <h1>Registro de Alumnos</h1>
+            <form action="" method="post">
+                <p>
+                    <label for="nombre" class="colocar_nombre">Nombre
+                        <span class="obligatorio">*</span>
+                    </label>
+                        <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                </p>
+                <p>
+                    <label for="ape_pat" class="colocar_apellido_pat">Apellido paterno
+                        <span class="obligatorio">*</span>
+                    </label>
+                        <input type="text" name="introducir_apellido_pat" id="ape_pat" required="obligatorio" placeholder="Escribe tu apellido paterno">
+                </p>
+                <p>
+                    <label for="ape_mat" class="colocar_apellido_mat">Apellido materno
+                        <span class="obligatorio">*</span>
+                    </label>
+                        <input type="text" name="introducir_apellido_mat" id="ape_mat" required="obligatorio" placeholder="Escribe tu apellido materno">
+                </p>
+                <p>
+                    <label for="carrera" class="colocar_carrera">Carrera
+                        <span class="obligatorio">*</span>
+                    </label>
+                        <select name="" id="">
+                            <option value="">Selecciona una opción...</option>
+                            <option>ISC</option>
+                            <option>IM</option>
+                            <option>IIA</option>
+                            <option>LA</option>
+                            <option>LC</option>
+                        </select>
+                </p>
+                <p>
+                    <label for="semestre" class="colocar_semestre">Semestre
+                        <span class="obligatorio">*</span>
+                    </label>
+                        <input type="number" min="1" max="12" name="introducir_semestre" id="semestre" placeholder="Ingresa el semestre">
+                </p>		
+                <button type="submit" name="enviar" id="enviar"><p>Enviar</p></button>
+                <button type="submit" name="eliminar" id="eliminar"><p>Eliminar</p></button>
+                <button type="submit" name="cambios" id="cambios"><p>Guardar cambios</p></button>
+                <p class="aviso">
+                    <span class="obligatorio"> * </span>los campos son obligatorios.
+                </p>		
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
